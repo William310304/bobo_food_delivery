@@ -2,6 +2,7 @@ package com.william.bobofooddeliveryapp.UI;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -20,8 +21,8 @@ import java.util.List;
 public class Onboarding extends AppCompatActivity {
 
     private ViewPager2 viewPager;
-    private Button btnNext;
-    private Button btnSkip;
+    private Button btnNext,btnSkip;
+
     private OnboardingAdapter adapter;
     private List<Integer> layouts;
 
@@ -34,6 +35,7 @@ public class Onboarding extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager);
         btnSkip = findViewById(R.id.btn_skip);
         btnNext = findViewById(R.id.btn_next);
+
 
         layouts = Arrays.asList(
                 R.layout.item_onboarding1,
@@ -49,6 +51,7 @@ public class Onboarding extends AppCompatActivity {
             goToLogin();
         });
 
+
         btnNext.setOnClickListener(v -> {
             int current = viewPager.getCurrentItem();
 
@@ -61,19 +64,23 @@ public class Onboarding extends AppCompatActivity {
         });
 
         // Cambiar texto de "Next" en la última página
-//        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
-//            @Override
-//            public void onPageSelected(int position) {
-//                super.onPageSelected(position);
-//                if (position == layouts.size() - 1) {
+        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                if (position == layouts.size() - 1) {
 //                    btnNext.setText("Empezar");
-//                    btnSkip.setVisibility(Button.GONE); // opcional ocultar skip
-//                } else {
+                    btnSkip.setVisibility(View.GONE);
+                    btnNext.setVisibility(View.GONE);
+
+                } else {
+                    btnSkip.setVisibility(View.VISIBLE);
+                    btnNext.setVisibility(View.VISIBLE);
 //                    btnNext.setText("Next");
 //                    btnSkip.setVisibility(Button.VISIBLE);
-//                }
-//            }
-//        });
+                }
+            }
+        });
 
     }
     private void goToLogin() {

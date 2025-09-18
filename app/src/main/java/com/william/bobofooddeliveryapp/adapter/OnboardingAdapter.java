@@ -40,17 +40,17 @@ public class OnboardingAdapter extends RecyclerView.Adapter<OnboardingAdapter.Vi
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-//        if (position == layouts.size() - 1) {
-//            Button btnEmpezar = holder.itemView.findViewById(R.id.btn_empezar);
-//            if (btnEmpezar != null) {
-//                btnEmpezar.setOnClickListener(v -> {
-//                    Context context = holder.itemView.getContext();
-//                    Intent intent = new Intent(context, LoginActivity.class);
-//                    context.startActivity(intent);
-//                    ((Activity) context).finish(); // cerrar Onboarding
-//                });
-//            }
-//        }
+        if (position == layouts.size() - 1) {
+            Button btnEmpezar = holder.itemView.findViewById(R.id.btn_view_Login);
+            if (btnEmpezar != null) {
+                btnEmpezar.setOnClickListener(v -> {
+                    Context context = holder.itemView.getContext();
+                    Intent intent = new Intent(context, LoginActivity.class);
+                    context.startActivity(intent);
+                    ((Activity) context).finish(); // cerrar Onboarding
+                });
+            }
+        }
     }
 
 

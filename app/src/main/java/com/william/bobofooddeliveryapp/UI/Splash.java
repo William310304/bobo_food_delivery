@@ -25,6 +25,6 @@ public class Splash extends AppCompatActivity {
             Intent intent = new Intent(Splash.this, Onboarding.class);
             startActivity(intent);
             finish(); // Cierra SplashActivity para que no vuelva atrás
-        },2000);
+        },3200);
     }
 }

@@ -12,10 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BoboFoodDeliveryApp">
         <activity
-            android:name=".UI.Onboarding"
+            android:name=".UI.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".UI.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Onboarding"
             android:exported="false" />
         <activity
             android:name=".UI.Splash"

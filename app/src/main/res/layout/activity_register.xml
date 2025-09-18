@@ -5,13 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".UI.RegisterActivity"
     android:background="@color/white"
-    android:padding="20dp"
-    android:focusable="true"
-    tools:context=".UI.LoginActivity">
-
+    android:padding="20dp">
     <TextView
-        android:id="@+id/btn_back"
+        android:id="@+id/btn_back_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Back"
@@ -22,72 +20,81 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/logo_bobo"
+        android:id="@+id/logo_bobo_register"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:src="@drawable/logo_bobo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/btn_back"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvLogin"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Log in to your account"
-        android:textAlignment="viewStart"
-        android:textSize="35sp"
-        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_bobo" />
+        app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tvLogin"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/logo_bobo_register"
         app:layout_constraintStart_toStartOf="parent"
-        android:orientation="vertical">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Create a new account"
+                android:textAlignment="viewStart"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                />
         <EditText
-            android:id="@+id/edtEmail"
+            android:id="@+id/edtEmail_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:autoText="true"
             android:background="@drawable/sh_bg_text_input_login"
-            android:hint="Email"
+            android:hint="email address"
             android:inputType="textEmailAddress"
             android:padding="12dp"
             android:textColorHint="#757575" />
         <EditText
-            android:id="@+id/edtPassword"
+            android:id="@+id/edtPassword_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:autoText="true"
             android:background="@drawable/sh_bg_text_input_login"
-            android:hint="Password"
+            android:hint="password"
             android:inputType="textPassword"
             android:padding="12dp"
             android:textColorHint="#757575" />
-        <TextView
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textColor="#5EAD1D"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_gravity="center"
-            android:text="forgot password"/>
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#60655C"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:text="I agree to terms and conditions"/>
+        </LinearLayout>
+
+
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textStyle="bold"
             android:backgroundTint="#5EAD1D"
             android:textColor="@color/white"
-            android:text="Log in"
+            android:text="Create account"
             android:stateListAnimator="@null"/>
     </LinearLayout>
 

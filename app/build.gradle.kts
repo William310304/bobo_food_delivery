@@ -5,7 +5,9 @@ plugins {
 android {
     namespace = "com.william.bobofooddeliveryapp"
     compileSdk = 36
-
+    viewBinding{
+        enable =true
+    }
     defaultConfig {
         applicationId = "com.william.bobofooddeliveryapp"
         minSdk = 23
