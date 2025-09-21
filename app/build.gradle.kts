@@ -42,4 +42,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("com.google.android.material:material:1.13.0-rc01")
+    implementation("com.squareup.picasso:picasso:2.71828")
+
 }

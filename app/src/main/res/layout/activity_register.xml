@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/logo_bobo_register"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,37 +45,82 @@
                 android:textSize="35sp"
                 android:textStyle="bold"
                 />
-        <EditText
-            android:id="@+id/edtEmail_register"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:autoText="true"
-            android:background="@drawable/sh_bg_text_input_login"
-            android:hint="email address"
-            android:inputType="textEmailAddress"
-            android:padding="12dp"
-            android:textColorHint="#757575" />
-        <EditText
-            android:id="@+id/edtPassword_register"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:autoText="true"
-            android:background="@drawable/sh_bg_text_input_login"
-            android:hint="password"
-            android:inputType="textPassword"
-            android:padding="12dp"
-            android:textColorHint="#757575" />
+<!--        <EditText-->
+<!--            android:id="@+id/edtEmail_register"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:autoText="true"-->
+<!--            android:background="@drawable/sh_bg_text_input_login"-->
+<!--            android:hint="email address"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:padding="12dp"-->
+<!--            android:textColorHint="#757575" />-->
+<!--        <EditText-->
+<!--            android:id="@+id/edtPassword_register"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:autoText="true"-->
+<!--            android:background="@drawable/sh_bg_text_input_login"-->
+<!--            android:hint="password"-->
+<!--            android:inputType="text"-->
+<!--            android:padding="12dp"-->
+<!--            android:textColorHint="#757575" />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edtEmail_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/black"
+                android:hint="email address"
+                app:errorEnabled="true"
+                style="@style/CustomTextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordLoyout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                app:errorEnabled="true"
+                app:errorTextColor="#E91E63"
+                app:hintTextColor="@color/black"
+                style="@style/CustomTextInputLayout"
+                android:hint="password"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:hint="text"-->
+<!--            android:padding="12dp"-->
+<!--            android:drawableEnd="@drawable/ic_eye_on"-->
+<!--            android:background="@drawable/sh_bg_text_input_login"-->
+<!--            />-->
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <CheckBox
                 android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/verder500"
+                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,6 +128,7 @@
                 android:textStyle="normal"
                 android:textSize="15sp"
                 android:text="I agree to terms and conditions"/>
+
         </LinearLayout>
 
 

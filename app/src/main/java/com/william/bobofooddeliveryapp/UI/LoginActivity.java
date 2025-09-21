@@ -49,8 +49,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private void btnLogin_click() {
         System.out.println("clickkkkkk");
-        String txtGmail = binding.edtEmail.getText().toString().trim();
-        String txtPassword = binding.edtPassword.getText().toString().trim();
+        String txtGmail = binding.edtEmail.getEditText().getText().toString().trim();
+        String txtPassword = binding.edtPassword.getEditText().getText().toString().trim();
 
         if (txtGmail.isEmpty() || txtPassword.isEmpty())
         {
