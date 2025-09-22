@@ -31,8 +31,16 @@ public class RegisterActivity extends AppCompatActivity {
         context = this;
 
         binding.btnBackRegister.setOnClickListener(view1 -> login());
+        binding.btnRegister.setOnClickListener(view1 -> createPerfile());
 
     }
+
+    private void createPerfile() {
+        Intent intent = new Intent(RegisterActivity.this, CreatePerfileActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
     private void login(){
         Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
         startActivity(intent);

@@ -39,11 +39,13 @@ public class LoginActivity extends AppCompatActivity {
         view = binding.getRoot();
         context = this;
         binding.btnLogin.setOnClickListener( view -> btnLogin_click());
-        binding.tvRegisterNow.setOnClickListener(view1 -> {
-            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-            startActivity(intent);
-            finish();
-        });
+        binding.tvRegisterNow.setOnClickListener(view1 -> registerNewUser());
+    }
+
+    private void registerNewUser() {
+        Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 

@@ -12,7 +12,7 @@
         android:id="@+id/btn_back_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" Back"
+        android:text="Back"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -37,10 +37,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp">
             <TextView
-                android:layout_width="340dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Create a new account"
+                android:text="@string/create_a_new_account"
                 android:textAlignment="viewStart"
                 android:textSize="35sp"
                 android:textStyle="bold"
@@ -79,6 +79,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
                     />
             </com.google.android.material.textfield.TextInputLayout>
 

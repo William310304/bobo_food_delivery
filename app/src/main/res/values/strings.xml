@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">boboFoodDeliveryApp</string>
     <string name="logo_de_la_app">Logo de la app</string>
+    <string name="create_a_new_account">Create a new account</string>
 </resources>

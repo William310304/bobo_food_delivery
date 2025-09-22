@@ -77,10 +77,12 @@
             app:hintTextColor="@color/black"
             android:hint="email address"
             app:errorEnabled="true"
+            android:layout_marginTop="15dp"
             style="@style/CustomTextInputLayout">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 

@@ -10,7 +10,7 @@
     </style>
     <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
         <item name="cornerSize">90%</item>
-        <item name="background">#802323</item>
+        <item name="background">@color/Antique_Ruby</item>
     </style>
     <style name="circliImageView" parent="">
         <item name="cornerFamily">rounded</item>
