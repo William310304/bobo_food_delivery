@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fondo">#202120</color>
+    <color name="Platinum">#3B3F38</color>
+    <color name="textColor">#EEF0ED</color>
+    <color name="redesbtn">#3B3F38</color>
+    <color name="paragraph">#60655C</color>
+    <color name="btnDisable">#3D3D3D</color>
+    <color name="fondoPhoto">#60635E</color>
+</resources>

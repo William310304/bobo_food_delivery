@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="textColor">#000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="verder500">#67BD1F</color>
     <color name="segundario">#ECF1E8</color>
     <color name="Platinum">#E8EBE6</color>
     <color name="chinese_white">#E0E0E0</color>
     <color name="Antique_Ruby">#802323</color>
-
-
+    <color name="Black_Olive">#3B3F38</color>
+    <color name="fondo">#FFFFFFFF</color>
+    <color name="redesbtn">#ECF1E8</color>
+    <color name="textSegund">#3B3F38</color>
+    <color name="paragraph">#C8C9C7</color>
+    <color name="btnDisable">#E8EBE6</color>
+    <color name="fondoPhoto">#fff</color>
 </resources>

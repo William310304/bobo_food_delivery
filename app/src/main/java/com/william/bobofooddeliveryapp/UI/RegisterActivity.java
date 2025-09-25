@@ -30,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
         view = binding.getRoot();
         context = this;
 
-        binding.btnBackRegister.setOnClickListener(view1 -> login());
+        binding.btnBack.setOnClickListener(view1 -> login());
         binding.btnRegister.setOnClickListener(view1 -> createPerfile());
 
     }

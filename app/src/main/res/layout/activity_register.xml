@@ -6,14 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UI.RegisterActivity"
-    android:background="@color/white"
+    android:background="@color/fondo"
     android:padding="20dp">
     <TextView
-        android:id="@+id/btn_back_register"
+        android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
         android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_arrow_back"
+        android:text="Back"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +27,7 @@
         android:layout_marginTop="10dp"
         android:src="@drawable/logo_bobo"
         app:layout_constraintEnd_toEndOf="parent"
+        style="@style/colorText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
@@ -72,7 +74,7 @@
                 android:id="@+id/edtEmail_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:hintTextColor="@color/black"
+                app:hintTextColor="@color/textColor"
                 android:hint="email address"
                 app:errorEnabled="true"
                 style="@style/CustomTextInputLayout">
@@ -90,7 +92,7 @@
                 app:endIconMode="password_toggle"
                 app:errorEnabled="true"
                 app:errorTextColor="#E91E63"
-                app:hintTextColor="@color/black"
+                app:hintTextColor="@color/textColor"
                 style="@style/CustomTextInputLayout"
                 android:hint="password"
                 >
@@ -125,7 +127,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#60655C"
+                android:textColor="@color/paragraph"
                 android:textStyle="normal"
                 android:textSize="15sp"
                 android:text="I agree to terms and conditions"/>
@@ -139,10 +141,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textStyle="bold"
-            android:backgroundTint="#5EAD1D"
-            android:textColor="@color/white"
             android:text="Create account"
-            android:stateListAnimator="@null"/>
+            style="@style/CustomSolidButton"/>
     </LinearLayout>
 
     <LinearLayout
@@ -159,6 +159,7 @@
             android:layout_height="wrap_content"
             android:text="¿No tienes una cuenta?"
             android:textStyle="normal"
+            android:textColor="@color/paragraph"
             />
         <TextView
             android:id="@+id/tvRegisterNow"
@@ -168,7 +169,7 @@
             android:text="Sign up"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"
+            android:textColor="@color/textColor"
             android:textStyle="bold"/>
     </LinearLayout>
 

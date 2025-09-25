@@ -2,8 +2,25 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.BoboFoodDeliveryApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--         <item name="colorPrimary">@color/design_default_color_on_primary</item>-->
     </style>
 
-    <style name="Theme.BoboFoodDeliveryApp" parent="Base.Theme.BoboFoodDeliveryApp" />
+    <style name="Theme.BoboFoodDeliveryApp" parent="Base.Theme.BoboFoodDeliveryApp" >
+<!--        <item name="background">@color/white</item>-->
+<!--        <item name="android:background">@color/white</item>-->
+    </style>
+    <style name="colorText">
+<!--        <item name="background">@color/black</item>-->
+    </style>
+    <style name="btnPrincipal">
+        <item name="android:backgroundTint">@color/verder500</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+    <style name="btnSegundario" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/Platinum</item>
+        <item name="android:textColor">@color/verder500</item>
+        <item name="cornerRadius">8dp</item>
+
+    </style>
 </resources>

@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
     android:gravity="center_horizontal">
 
     <ImageView
@@ -18,16 +17,16 @@
         android:alpha="0.8"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:gravity="center"/>
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        />
     <Button
         android:id="@+id/btn_view_Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        android:backgroundTint="#5D9E29"
+        style="@style/CustomSolidButton"
         android:layout_marginTop="20dp"
         android:padding="13dp"
         />
@@ -39,7 +38,7 @@
         android:layout_marginBottom="10dp"
         android:paddingHorizontal="20dp"
         android:text="Or"
-        android:textColor="@color/black"
+        android:textColor="@color/textSegund"
         android:textSize="15sp"
         android:alpha="0.6"
         android:textStyle="bold" />
@@ -47,20 +46,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:padding="20dp"
         android:gravity="center">
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:backgroundTint="@color/redesbtn"
             android:src="@drawable/facebook"
             />
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:backgroundTint="@color/redesbtn"
             android:src="@drawable/google"/>
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mail_5_svgrepo_com"/>
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:backgroundTint="@color/redesbtn"
+            android:src="@drawable/mail_5_svgrepo_com"
+            />
 
     </LinearLayout>
 

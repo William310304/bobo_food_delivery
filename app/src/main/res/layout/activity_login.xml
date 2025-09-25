@@ -3,19 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    style="Theme.BoboFoodDeliveryApp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:padding="20dp"
     android:focusable="true"
+    android:padding="20dp"
+    android:background="@color/fondo"
     tools:context=".UI.LoginActivity">
 
     <TextView
         android:id="@+id/btn_back"
+        style="colorText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" Back"
         android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_arrow_back"
+        android:text="Back"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:src="@drawable/logo_bobo"
+        style="@style/colorText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/btn_back"
         app:layout_constraintTop_toTopOf="parent" />
@@ -42,115 +46,94 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_bobo" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tvLogin"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        android:orientation="vertical">
-<!--        <EditText-->
-<!--            android:id="@+id/edtEmail"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:autoText="true"-->
-<!--            android:background="@drawable/sh_bg_text_input_login"-->
-<!--            android:hint="Email"-->
-<!--            android:inputType="textEmailAddress"-->
-<!--            android:padding="12dp"-->
-<!--            android:textColorHint="#757575" />-->
-<!--        <EditText-->
-<!--            android:id="@+id/edtPassword"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:autoText="true"-->
-<!--            android:background="@drawable/sh_bg_text_input_login"-->
-<!--            android:hint="Password"-->
-<!--            android:inputType="textPassword"-->
-<!--            android:padding="12dp"-->
-<!--            android:textColorHint="#757575" />-->
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin">
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edtEmail"
+            style="@style/CustomTextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:hintTextColor="@color/black"
+            android:layout_marginTop="15dp"
             android:hint="email address"
             app:errorEnabled="true"
-            android:layout_marginTop="15dp"
-            style="@style/CustomTextInputLayout">
+            app:hintTextColor="@color/textColor">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                />
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edtPassword"
+            style="@style/CustomTextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="password"
             app:endIconMode="password_toggle"
             app:errorEnabled="true"
             app:errorTextColor="#E91E63"
-            app:hintTextColor="@color/black"
-            style="@style/CustomTextInputLayout"
-            android:hint="password"
-            >
+            app:hintTextColor="@color/textColor">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                />
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textColor="#5EAD1D"
-            android:textStyle="bold"
-            android:textSize="18sp"
             android:layout_gravity="center"
-            android:text="forgot password"/>
+            android:layout_marginTop="20dp"
+            android:text="forgot password"
+            android:textColor="#5EAD1D"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <Button
             android:id="@+id/btn_login"
+            style="@style/CustomSolidButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            android:backgroundTint="#5EAD1D"
-            android:textColor="@color/white"
             android:text="Log in"
-            android:stateListAnimator="@null"/>
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:orientation="horizontal"
         android:layout_margin="16dp"
-        >
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="¿No tienes una cuenta?"
             android:textStyle="normal"
-            />
+            android:textColor="@color/paragraph"/>
+<!--60655C C8C9C7-->
         <TextView
             android:id="@+id/tvRegisterNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
-            android:text="Sign up"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:text="Sign up"
+            android:textColor="@color/textColor"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
